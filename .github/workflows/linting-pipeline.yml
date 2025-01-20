@@ -21,11 +21,10 @@ jobs:
           node-version: '16'
 
       - name: Install Dependencies
-        run: |
-          npm install htmlhint stylelint --save-dev
+        run: npm install htmlhint stylelint --save-dev
 
       - name: Lint HTML Files
         run: npx htmlhint "**/*.html"
 
       - name: Lint CSS Files
-        run: npx stylelint "Portfolio-website/style/*.css"
+        run: npx stylelint "**/*.css"
