@@ -28,4 +28,4 @@ jobs:
         run: npx htmlhint "**/*.html"
 
       - name: Lint CSS Files
-        run: npx stylelint "styles/**/*.css"
+        run: npx stylelint "**/*.css"
